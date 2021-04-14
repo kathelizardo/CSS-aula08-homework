@@ -87,7 +87,7 @@ body
       }
       /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {
-        display: block;
+        display: none;
         font-size: 2px;
       }
 /* Fin Menu desplegable pantalla pequena */
@@ -593,7 +593,19 @@ body
         border-radius: 6px;
         width:800px;
     }
-
+    @media screen and (max-device-width : 768px) {
+        .titulofm h1 , h2 {font-size: 8vw;}
+        .titulofm h3 {font-size: 6vw;}
+        .titulofm p {
+            font-size: 20px;
+            text-align: center;}
+        .fotodemes {
+            border-color: black;
+            border-radius: 10px;
+            width:80%;
+            padding: 1em 2em 2em 2em;
+        }
+    }
     
   /* PAGINA - FOTOGRAFOS */
 
@@ -628,8 +640,26 @@ body
         font-size: 40px;
         color: black;
     }
+    @media screen and (max-device-width : 768px) {
+        .fotografos {
+            display: flex;
+            flex-direction: column;}
 
-    
+        .fotografos h1{
+                color: rgba(209, 81, 59, 0.959);
+                font-size:5vw;
+                   }
+        .fotografos h3{
+                color: rgba(209, 81, 59, 0.959);
+                font-size:5vw;
+                   }
+        .fotografos p {
+            text-align: justify;
+            font-size: 2vw;
+            color: black;
+        }
+    }
+
 
    /* PAGINA - CONTATO */
 
